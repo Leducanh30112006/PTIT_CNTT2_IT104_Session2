@@ -13,8 +13,6 @@ const getStudentSummary = ({ name, age, listMonHoc }) => {
   const scores = listMonHoc.map((ele) => ele.score);
   const sum = scores.reduce((acc, curr) => acc + curr, 0);
   const avg = +(sum / scores.length).toFixed(2);
-
-  // Xếp loại
   const rank =
     avg < 5
       ? "Học sinh yếu"
